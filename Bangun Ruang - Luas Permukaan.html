@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Kalkulator Penuh Manfaat Setiap Saat">
+	  <meta name="keywords" content="Pekerjaan semakin mudah, cepat dan efisien">
+  	<meta name="author" content="Kelompok 6">
+    <title>The Math | Luas Permukaan</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding" >
+          <h1>The <span class="highlight">MATH</span></h1>
+        </div>
+      </div>
+        <nav>
+          <ul >
+            <li><a href="index.html">Home</a></li>
+            <li class="sub-menu"><a >Bangun Datar <i class="fas fa-caret-down"></i></a>
+              <ul>
+                <li><a href="Bangun%20Datar%20-%20Keliling.html">Keliling</a></li>
+                <li><a href="Bangun%20Datar%20-%20Luas.html">Luas</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a  class="active">Bangun Ruang <i class="fas fa-caret-down"></i></a>
+              <ul>
+                <li><a href="Bangun%20Ruang%20-%20Luas%20Permukaan.html" class="active">Luas Permukaan</a></li>
+                <li><a href="Bangun%20Ruang%20-%20Volume.html">Volume</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fas fa-bars" ></i></div>
+    </header>
+	
+    
+	<section id="showcase">
+      <div class="container">
+	  <img class="bg" src="img/3dshapes.gif">
+        <h1>Kalkulator Penuh Manfaat Setiap Saat</h1>
+        <p>Pekerjaan semakin mudah, cepat dan efisien</p>
+      </div>
+    </section>
+	
+	<section id="boxes">
+      <div class="container">
+        <article id="main-col">
+		<H1 class="judul"> Silahkan Pilih Bangun</H1>
+			<div class="box">
+			  <img src="./img/cube.png">
+			  <h3>Kubus</h3>
+			  <p>Kubus ialah sebuah bangun ruang yang memiliki panjang rusuk yang sama serta merupakan bangun yang di batasi oleh enam buah sisi yang sama dan sebangun, serta merupakan bangun ruang tiga dimensi.</p>
+			  <a href="calc/kubus.html"><button class="btn">click me</button></a>
+			</div>
+			<div class="box">
+			  <img src="./img/cuboid.png">
+			  <h3>Balok</h3>
+			  <p>Balok ialah bangun ruang tiga dimensi yang dibentuk dari tiga pasang persegi atau persegi panjang, dengan setidaknya memiliki satu pasang di antaranya berukuran berbeda.</p>
+                <a href="calc/balok.html"><button class="btn">click me</button></a>
+			</div>
+			<div class="box">
+			  <img src="./img/cone.png">
+			  <h3>Kerucut</h3>
+			  <p>Kerucut adalah salah satu bangun ruang yang mempunyai sebuah alas yang berbentuk lingkaran dengan selimut yang memiliki irisan dari lingkaran.</p>
+                <a href="calc/kerucut.html"><button class="btn">click me</button></a>
+			</div>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h1 class="page-title">Luas Permukaan Bangun Ruang</h1>
+			  <p>
+				Bangun ruang adalah sebuah penamaan atau sebutan untuk beberapa bangun-bangun yang berbentuk tiga dimensi atau bangun yang mempunyai ruang yang dibatasi oleh sisi-sisinya.
+			  </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+	
+    <footer>
+		<p>The MATH, Copyright &copy; 2019</p>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('nav').toggleClass('active')
+      })
+      $('ul li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
+      })
+    })
+  </script>
+  </body>
+</html>

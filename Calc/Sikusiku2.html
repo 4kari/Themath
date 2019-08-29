@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Kalkulator Penuh Manfaat Setiap Saat">
+	  <meta name="keywords" content="Pekerjaan semakin mudah, cepat dan efisien">
+  	<meta name="author" content="Kelompok 6">
+    <title>The Math | Luas Segitiga Siku-Siku</title>
+      <script src="hitung.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../font-awesome/css/all.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding" >
+          <h1>The <span class="highlight">MATH</span></h1>
+        </div>
+      </div>
+        <nav>
+          <ul >
+            <li><a href="../index.html">Home</a></li>
+            <li class="sub-menu"><a  class="active">Bangun Datar <i class="fas fa-caret-down"></i></a>
+              <ul>
+                <li><a href="../Bangun%20Datar%20-%20Keliling.html" >Keliling</a></li>
+                <li><a href="../Bangun%20Datar%20-%20Luas.html" class="active">Luas</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu"><a >Bangun Ruang <i class="fas fa-caret-down"></i></a>
+              <ul>
+                <li><a href="../Bangun%20Ruang%20-%20Luas%20Permukaan.html">Luas Permukaan</a></li>
+                <li><a href="../Bangun%20Ruang%20-%20Volume.html">Volume</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fas fa-bars" ></i></div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+		<img class="bg" src="../img/square.gif">
+        <h1>Kalkulator Penuh Manfaat Setiap Saat</h1>
+        <p>Pekerjaan semakin mudah, cepat dan efisien</p>
+      </div>
+    </section>
+	
+	<section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Luas Segitiga Siku-Siku</h1>
+          <p>
+		  <p>Segitiga siku-siku merupakan salah salah satu segitiga yang memiliki satu sudut yang membentuk 90 derajat.</p>
+		  <p>Ciri-cirinya :<br>
+		  1. Segitiga siku-siku memiliki dua buah sisi siku-siku, yang dimana kedua sisi siku-siku tersebut mengapit sebuah sudut siku-siku dan 1 sisi miring atau hypotenusa<br>
+		  2. Hypotenusa atau sisi miring di setiap segitiga siku-siku selalu terletak di depan sudut siku-siku<br>
+		  3. Memiliki satu buah sudut yang besarnya 90 derajat
+		  </p>
+            <form class="C-form" method="post" onsubmit="return L_siku_siku(); ">
+				masukkan alas :<input type="number" min="1" max="10000" class="C-input" placeholder="Alas"/ id="alas" onkeypress="return cek(event);">
+				masukkan tinggi :<input type="number" min="1" max="10000" class="C-input" placeholder="Tinggi"/ id="tinggi" onkeypress="return cek(event)">
+				<input type="submit" class="btn" value="Hitung">
+			</form>
+          </p>
+          <p class="dark" id="hasil">Hasil
+          </p>
+		  <p id="penjelasan">
+          </p>
+        </article>
+      </div>
+    </section>
+    
+
+    <footer>
+		<p>The MATH, Copyright &copy; 2019</p>
+    </footer>
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('nav').toggleClass('active')
+      })
+      $('ul li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
+      })
+    })
+  </script>
+  </body>
+</html>
